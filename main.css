@@ -99,7 +99,7 @@ h1 {
   padding: 1.2rem;
   /* grid-template-columns: 2fr 1fr; */
   gap: 1.2rem;
-  margin-bottom: 3.6rem;
+  margin-bottom: 1.6rem;
 }
 
 .header-container {
@@ -144,6 +144,7 @@ h1 {
 .hero-txt {
   font-weight: 500;
   font-size: var(--font-size-subheading);
+  line-height: 1.2;
 }
 
 .description-txt-container {
@@ -268,6 +269,7 @@ h1 {
 @media (max-width: 40em) {
   .main {
     /* background-color: red; */
+    margin-bottom: 0rem;
   }
 
   .hero-container {
