@@ -179,6 +179,26 @@ h1 {
 }
 
 /*************************/
+/* iamges section */
+/*************************/
+.imgs-section {
+  max-width: 90rem;
+  display: flex;
+  gap: 6.4rem;
+  padding: 1.2rem;
+  margin-bottom: 1.6rem;
+}
+
+.img-container {
+  max-width: 7.2rem;
+}
+
+.img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*************************/
 /* publications section */
 /*************************/
 
