@@ -6,6 +6,7 @@
   --font-color-darkgrey: #212529;
   --font-color-blue-link: #3b5bdb;
   --font-color-blue-link-hover: #4263eb;
+  --background-color: #fff;
 }
 
 * {
@@ -26,6 +27,8 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 6.4rem;
+  background-color: var(--background-color);
+  color: var(--font-color-darkgrey);
 }
 
 h1 {
@@ -239,7 +242,7 @@ h1 {
   font-weight: 500;
   line-height: 1.2;
   text-decoration: none;
-  color: #212529;
+  color: var(--font-color-darkgrey)
 }
 
 .publication-link:active,
@@ -276,6 +279,12 @@ h1 {
   transform: scale(1.05);
 }
 
+.github-logo {
+  content: url('imgs/gihub-img.png');
+  /* max-width: 100%;
+  height: auto; */
+}
+
 /*************************/
 /* media queries */
 /*************************/
@@ -309,3 +318,17 @@ h1 {
   }
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #212529;
+    --font-color-darkgrey: #ced4da;
+  }
+
+  .description-txt {
+    color: var(--font-color-darkgrey);
+  }
+
+  .github-logo {
+    content: url(imgs/github-white.webp);
+  }
+}
