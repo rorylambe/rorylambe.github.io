@@ -17,7 +17,7 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 62.5%; /*when you set this, 1rem = 10px */
   line-height: 1;
 }
 
@@ -148,10 +148,10 @@ h1 {
 .hero-txt {
   font-weight: 500;
   font-size: var(--font-size-subheading);
-  line-height: 1.2;
+  line-height: 1.4;
 }
 
-.description-txt-container {
+.description-txt-container { /* removed */
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
@@ -160,9 +160,9 @@ h1 {
 .description-txt {
   font-weight: 400;
   font-size: var(--font-size-body);
-  line-height: 1.4;
+  line-height: 1.5;
   color: #212529;
-  margin-bottom: 1.6rem; /* added when text wraps image */
+  margin-bottom: 1.8rem; /* added when text wraps image */
 }
 
 .in-text-link {
@@ -240,7 +240,7 @@ h1 {
 .publication-link:visited {
   font-size: var(--font-size-subheading);
   font-weight: 500;
-  line-height: 1.2;
+  line-height: 1.4;
   text-decoration: none;
   color: var(--font-color-darkgrey)
 }
@@ -299,7 +299,9 @@ h1 {
 @media (max-width: 40em) {
   .main {
     /* background-color: red; */
+    grid-template-columns: 1fr;
     margin-bottom: 0rem;
+    gap: 0;
   }
 
   .hero-container {
@@ -314,10 +316,22 @@ h1 {
     float: none;
     max-width: 75%;
     display: block;
-    margin: 0 auto 1.4rem;
+    margin: 0 auto 1.6rem;
+  }
+
+  .description-txt {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+  }
+
+  .author-list {
+    font-size: 1.5rem;
+    line-height: 1.4;
   }
 }
 
+/* dark mode media query */
 @media (prefers-color-scheme: dark) {
   :root {
     --background-color: #212529;
