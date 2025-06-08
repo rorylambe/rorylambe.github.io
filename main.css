@@ -43,7 +43,7 @@ h1 {
 /* NAVBAR */
 /*************************/
 .nav-header {
-  padding: 1.6rem;
+  padding: 1.6rem 0 0rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,7 +124,6 @@ h1 {
   /* display: grid;
   grid-template-columns: 2fr 1fr; */
   display: block;
-  gap: 1.6rem;
 }
 
 .profile-img-container {
@@ -170,7 +169,7 @@ h1 {
   font-size: var(--font-size-body);
   line-height: 1.5;
   color: #212529;
-  margin-bottom: 1.8rem; /* added when text wraps image */
+  margin-bottom: 2.6rem; /* added when text wraps image */
 }
 
 .in-text-link {
@@ -286,6 +285,7 @@ h1 {
 
 .link-img:hover {
   transform: scale(1.05);
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .github-logo {
@@ -325,7 +325,7 @@ h1 {
     float: none;
     max-width: 75%;
     display: block;
-    margin: 0 auto 1.6rem;
+    margin: 0 auto 2rem;
   }
 
   .description-txt {
